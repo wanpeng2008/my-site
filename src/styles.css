@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+@import "//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+/*
+* For angular2-image-gallery
+* */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';

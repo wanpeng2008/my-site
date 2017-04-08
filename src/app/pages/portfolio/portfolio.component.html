@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col col-sm-10 col-md-offset-1">
+      <div class="section-header">
+        <h2>我的<strong>作品集</strong></h2>
+      </div>
+      <ul class="portfolio-filters">
+        <li><a [routerLink]="[{outlets:{primary:['album',0], aux:['annotation',0]}}]">全部</a></li>
+        <li><a [routerLink]="[{outlets:{primary:['album',1], aux:['annotation',1]}}]">Project1</a></li>
+        <li><a [routerLink]="[{outlets:{primary:['album',2], aux:['annotation',2]}}]">Project2</a></li>
+        <li><a [routerLink]="[{outlets:{primary:['album',3], aux:['annotation',3]}}]">Project3</a></li>
+      </ul>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-sm-8 col-md-offset-2">
+      <router-outlet name="aux"></router-outlet>
+    </div>
+  </div>
+
+</div>
+
+<!--<p>
+  portfolio works!
+</p>
+
+-->

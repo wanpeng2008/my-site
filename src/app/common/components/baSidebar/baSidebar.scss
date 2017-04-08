@@ -1,0 +1,35 @@
+.sidebar-menu {
+  color: white;
+  background-color: black;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  padding: 90px 0px 90px 0px;
+  opacity: 0.98;
+  z-index: 0;
+  width: 0px;
+  transition:width 0.5s;
+  -moz-transition:width 0.5s; /* Firefox 4 */
+  -webkit-transition:width 0.5s; /* Safari and Chrome */
+  -o-transition:width 0.5s; /* Opera */
+}
+.sidebar-btn{
+  left: 40px;
+  font-size: 4em;
+  margin-right: 1em;
+  position: absolute;
+  z-index: 999;
+  color: blue;
+  transition:color 0.3s linear;
+  -moz-transition:color 0.3s linear; /* Firefox 4 */
+  -webkit-transition:color 0.3s linear; /* Safari and Chrome */
+  -o-transition:color 0.3s linear; /* Opera */
+}
+.side-bar:hover > .sidebar-menu {
+  width: 240px;
+  z-index: 998;
+}
+.side-bar:hover > .sidebar-btn{
+  color: white;
+}
